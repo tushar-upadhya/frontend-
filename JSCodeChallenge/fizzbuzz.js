@@ -1,4 +1,3 @@
-
 // console.time("fizzbuzz");
 
 // for(let i=0; i<50; i++){
@@ -18,6 +17,6 @@
 
 // console.timeEnd("fizzbuzz");
 
-for(let j=0; j<50; j++){
-    console.log((j%3 ? "" : "Fizz") + (j%5 ? "" : "Buzz") || j) 
+for (let j = 0; j < 50; j++) {
+  console.log((j % 3 ? "" : "Fizz") + (j % 5 ? "" : "Buzz") || j);
 }

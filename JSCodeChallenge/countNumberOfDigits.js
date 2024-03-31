@@ -1,23 +1,18 @@
 // count the number of digits of a number
 // 23432: 5
 
+function countNumberOfDigits(n) {
+  num = Math.abs(n);
+  let count = 0;
 
-function countNumberOfDigits(n){
+  do {
+    count++;
+    num = Math.floor(num / 10);
+  } while (num > 0);
 
-    num= Math.abs(n)
-    let count= 0;
+  return count;
 
-    do {
-        count++;
-        num= Math.floor(num / 10);
-    } while (num>0);
-
-    return count;
-
-
-
-
-    // return n.toString().split("").length;
+  // return n.toString().split("").length;
 }
 
-console.log(countNumberOfDigits(23452))
+console.log(countNumberOfDigits(23452));
