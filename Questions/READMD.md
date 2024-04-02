@@ -2,7 +2,8 @@
 
 1. [What is the data type returned by the typeof [] expression in JavaScript?](#what-is-the-data-type-returned-by-the-typeof-expression-in-javascript)
 2. [What is typeof arguments](#What-is-typeof-arguments)
-3. [Let's play a little mind game! What do you think the magical JavaScript crystal ball reveals when you ask it about the type of null using typeof null?](#lets-play-a-little-mind-game-what-do-you-think-the-magical-javaScript-crystal-ball-reveals-when-you-ask-it-about-the-type-of-null using-typeof-null?)
+3. [Let's play a little mind game! What do you think the magical JavaScript crystal ball reveals when you ask it about the type of null using typeof null?](#lets-play-a-little-mind-game-what-do-you-think-the-magical-javascript-crystal-ball-reveals-when-you-ask-it-about-the-type-of-null-using-typeof-null)
+
 
 ---
 
