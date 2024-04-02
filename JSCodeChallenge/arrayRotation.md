@@ -37,3 +37,5 @@ Array after 3rd rotation: [3, 4, 5, 1, 2]
 
 Final rotated array: [3, 4, 5, 1, 2]
 ```
+
+### This function rotates the elements of the array to the left by a specified number of rotations. Each rotation involves removing the last element and adding it to the beginning of the array.
