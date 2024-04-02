@@ -5,7 +5,7 @@
 3. [What is the value of typeof null](#What-is-the-value-of-typeof-null)
 4. [What is console.log(true+false)](#What-is-console.log(true+false))
 5. [What is the result of 2 + true in JavaScript?](#What-is-the-result-of-2+true-in-JavaScript?)
-5. [What is the value of -'34'+10?](#What-is-the-value-of--'34'+10)
+5. [What is the value of -'34'+10?](#What-is-the-value-of-'-34'+10)
 
 
 ---
