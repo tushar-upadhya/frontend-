@@ -2,7 +2,7 @@
 
 1. [What is the data type returned by the typeof [] expression in JavaScript?](#what-is-the-data-type-returned-by-the-typeof-expression-in-javascript)
 2. [What is typeof arguments](#What-is-typeof-arguments)
-3. [Let's play a little mind game! What do you think the magical JavaScript crystal ball reveals when you ask it about the type of null using typeof null?](#lets-play-a-little-mind-game-what-do-you-think-the-magical-javascript-crystal-ball-reveals-when-you-ask-it-about-the-type-of-null-using-typeof-null)
+3. [What is the value of typeof null](#What-is-the-value-of-typeof-null)
 
 
 ---
@@ -35,7 +35,7 @@ exampleFunction('hello', 42, true);
 
 ```
 
-### Let's play a little mind game! What do you think the magical JavaScript crystal ball reveals when you ask it about the type of null using typeof null?
+### What is the value of typeof null?
 
 Brace yourselves for a twist in the JavaScript saga! When you consult the mystical typeof operator about the nature of null, it whispers back, "object". Yes, you heard it right! It's a curious quirk in the land of JavaScript. Despite null being a primitive value that represents the absence of any object value, typeof null insists on labeling it as an "object". Strange, isn't it? 
 
