@@ -1,7 +1,7 @@
 ## Table of Contents
 
 1. [What is the data type returned by the typeof [] expression in JavaScript?](#what-is-the-data-type-returned-by-the-typeof-expression-in-javascript)
-2. [Variables](#variables)
+2. [What is typeof arguments](#What-is-typeof-arguments)
 3. [Functions](#functions)
 4. [Objects and Data Structures](#objects-and-data-structures)
 5. [Classes](#classes)
@@ -25,3 +25,20 @@ console.log(typeof arr); // Outputs: "object"
 
 // To properly check if it's an array
 console.log(Array.isArray(arr)); // Outputs: true
+
+```
+
+### What is typeof arguments?
+
+Ah, the mysterious arguments object! When you check the type of arguments using typeof, it returns "object". This might seem counterintuitive because arguments behaves like an array but isn't technically one. It's what we call an "array-like object". It does have a length property and you can access its elements using indexes, just like an array. However, it lacks all the fancy array methods like push, pop, map, and so on. It's like a VIP pass to the array club, but without all the perks. So, next time you encounter typeof arguments, remember, it's just another member of the "object" gang, trying to fit in with the arrays! 😄
+
+```javascript
+function exampleFunction() {
+  console.log(typeof arguments); // Outputs: "object"
+  console.log(arguments.length); // Outputs: Number of arguments passed
+  console.log(arguments[0]); // Outputs: The first argument
+}
+
+exampleFunction('hello', 42, true);
+
+```
