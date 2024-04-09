@@ -3,10 +3,9 @@
 1. [What is the data type returned by the typeof [] expression in JavaScript?](#what-is-the-data-type-returned-by-the-typeof-expression-in-javascript)
 2. [What is typeof arguments](#What-is-typeof-arguments)
 3. [What is the value of typeof null](#What-is-the-value-of-typeof-null)
-4. [What is console.log(true+false)](#What-is-console.log(true+false))
+4. [What is console.log(true+false)](<#What-is-console.log(true+false)>)
 5. [What is the result of 2 + true in JavaScript?](#What-is-the-result-of-2+true-in-JavaScript?)
-5. [What is the value of -'34'+10?](#What-is-the-value-of-'-34'+10)
-
+6. [What is the value of -'34'+10?](#What-is-the-value-of-'-34'+10)
 
 ---
 
@@ -20,7 +19,6 @@ console.log(typeof arr); // Outputs: "object"
 
 // To properly check if it's an array
 console.log(Array.isArray(arr)); // Outputs: true
-
 ```
 
 ### What is typeof arguments?
@@ -34,17 +32,15 @@ function exampleFunction() {
   console.log(arguments[0]); // Outputs: The first argument
 }
 
-exampleFunction('hello', 42, true);
-
+exampleFunction("hello", 42, true);
 ```
 
 ### What is the value of typeof null?
 
-Brace yourselves for a twist in the JavaScript saga! When you consult the mystical typeof operator about the nature of null, it whispers back, `"object"`. Yes, you heard it right! It's a curious quirk in the land of JavaScript. Despite null being a primitive value that represents the absence of any object value, typeof null insists on labeling it as an `"object"`. Strange, isn't it? 
+Brace yourselves for a twist in the JavaScript saga! When you consult the mystical typeof operator about the nature of null, it whispers back, `"object"`. Yes, you heard it right! It's a curious quirk in the land of JavaScript. Despite null being a primitive value that represents the absence of any object value, typeof null insists on labeling it as an `"object"`. Strange, isn't it?
 
 ```javascript
 console.log(typeof null); // Outputs: "object"
-
 ```
 
 ### What is console.log(true+false)
@@ -55,7 +51,6 @@ encounter with true and false be a reminder of the enchanting peculiarities that
 
 ```javascript
 console.log(true + false); // Outputs: 1
-
 ```
 
 ### What is the result of 2 + true in JavaScript?
@@ -64,7 +59,6 @@ Ah, the mystical world of type coercion strikes again! When you add a number and
 
 ```javascript
 console.log(2 + true); // Outputs: 3
-
 ```
 
 ### What is the value of -'34'+10?
@@ -76,7 +70,5 @@ Let's break it down, shall we? When JavaScript encounters the unary operator `- 
 So, the magic equation - `'34' + 10` equals `-24`! Isn't JavaScript just full of surprises?
 
 ```javascript
-console.log(-'34' + 10); // Outputs: -24
-
-
+console.log(-"34" + 10); // Outputs: -24
 ```
