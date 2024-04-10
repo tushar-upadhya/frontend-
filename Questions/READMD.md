@@ -4,8 +4,11 @@
 2. [What is typeof arguments](#What-is-typeof-arguments)
 3. [What is the value of typeof null](#What-is-the-value-of-typeof-null)
 4. [What is console.log(true+false)](<#What-is-console.log(true+false)>)
-5. [What is the result of 2 + true in JavaScript?](#What-is-the-result-of-2+true-in-JavaScript?)
-6. [What is the value of -'34'+10?](#What-is-the-value-of-'-34'+10)
+5. [What is the result of `2 + true` in JavaScript?](#What-is-the-result-of-2+true-in-JavaScript?)
+6. [What is the value of `-'34'+10`?](#What-is-the-value-of-'-34'+10)
+7. [What is the value of `+'dude'` in JavaScript?](#What-is-the-value-of+'dude'-in-JavaScript?)
+8. [If you have `var y = 1, x = y = typeof x`; What is the value of x?](#What-is-the-value-of+'dude'-in-JavaScript?)
+9. [For `var a = (2, 3, 5);`, what is the value of `a`?](<#for-var-a-=-(2,-3,-5)-what-is-the-value-of-a?>)
 
 ---
 
@@ -71,4 +74,25 @@ So, the magic equation - `'34' + 10` equals `-24`! Isn't JavaScript just full of
 
 ```javascript
 console.log(-"34" + 10); // Outputs: -24
+```
+
+### What is the value of +'dude' in JavaScript?
+
+Answer🟢 : Ah, the quirky world of JavaScript strikes again! When you put a plus sign (+) in front of a string, it attempts to coerce that string into a number. However, if the string isn't a valid number, JavaScript throws its hands up in despair and gives us NaN—which stands for "Not a Number."
+
+📝 So, when you try to convert the string 'dude' into a number with +, JavaScript shrugs and says, "Sorry, I can't do that!" and hands you back NaN, which stands for "Not a Number." It's like asking your cat to do your taxes—it's just not going to happen!
+
+```javascript
+console.log(+"dude"); // Outputs: NaN
+```
+
+### For `var a = (2, 3, 5);`, what is the value of `a`?
+
+Answer🟢 : Hold onto your hats for this JavaScript rollercoaster ride! The comma operator, often the unsung hero of JavaScript's quirky features, evaluates each of its operands from left to right, and returns the value of the last operand. So, in our case, (2, 3, 5) evaluates 2, then 3, and finally, 5. And guess what? The value of a gleefully adopts the last value in line, which is 5!
+
+📝 So, if you ever wondered what the result of an adventure with commas could be, it's simply the last number in the sequence. JavaScript, always keeping you on your toes!
+
+```javascript
+var a = (2, 3, 5);
+console.log(a); // Output: 5
 ```
