@@ -38,3 +38,8 @@ h1 {
 .units {
   font-size: 15px;
 }
+
+.made_by {
+  text-decoration: none;
+  color: rgba(50, 87, 81, 1);
+}

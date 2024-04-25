@@ -1,0 +1,28 @@
+.warper {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.button {
+  height: 10vh;
+  width: 10vh;
+  border: 1px solid black;
+}
+
+#grey {
+  background-color: gray;
+}
+
+#white {
+  background-color: white;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}

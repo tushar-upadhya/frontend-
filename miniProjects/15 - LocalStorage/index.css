@@ -79,3 +79,8 @@ h2 {
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.made_by {
+  text-decoration: none;
+  color: rgba(50, 87, 81, 1);
+}

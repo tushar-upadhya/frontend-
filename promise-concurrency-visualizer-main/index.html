@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS Promise Visualizer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <!-- <div>one</div> -->
+    <main>
+      <h3>Promise Concurrency Visualizer</h3>
+      <div>
+        <span>
+          <label for="promiseType">Select promise concurrency type:</label>
+          <select id="promiseType" class="select-dropdown">
+            <option value="all" selected>Promise.all()</option>
+            <option value="allSettled">Promise.allSettled()</option>
+            <option value="any">Promise.any()</option>
+            <option value="race">Promise.race()</option>
+          </select>
+        </span>
+        <div class="btn-container">
+          <span class="buttons">
+            <button id="clear">Clear</button>
+            <button id="reset">Reset</button>
+            <button id="start">Start</button>
+          </span>
+        </div>
+        <hr />
+        <div>
+          <div id="explain"></div>
+          <a href="#" target="_blank" id="mdn-link">read more on mdn docs</a>
+        </div>
+        <hr />
+      </div>
+
+      <div id="container">
+        <div>
+          <b> Promise One </b>
+          <div>
+            <span>
+              <label for="delay1">Delay: </label>
+              <select id="delay1" class="select-dropdown">
+                <option value="1">1 sec</option>
+                <option value="2" selected>2 sec</option>
+                <option value="3">3 sec</option>
+                <option value="4">4 sec</option>
+                <option value="5">5 sec</option>
+                <option value="6">6 sec</option>
+                <option value="7">7 sec</option>
+                <option value="8">8 sec</option>
+                <option value="9">9 sec</option>
+                <option value="10">10 sec</option>
+              </select>
+            </span>
+            <span>
+              <input
+                type="radio"
+                id="resolve1"
+                name="status1"
+                value="resolve"
+                checked
+                class="radio-btn"
+              />
+              <label for="resolve1" class="radio-label">Resolve</label>
+
+              <input
+                type="radio"
+                id="reject1"
+                name="status1"
+                value="reject"
+                class="radio-btn"
+              />
+              <label for="reject1" class="radio-label">Reject</label>
+            </span>
+          </div>
+          <div id="one" class="one"></div>
+          <div id="timeOne" class="one"></div>
+        </div>
+        <div>
+          <b> Promise Two </b>
+          <div>
+            <span>
+              <label for="delay2">Delay:</label>
+              <select id="delay2" class="select-dropdown">
+                <option value="1">1 sec</option>
+                <option value="2" selected>2 sec</option>
+                <option value="3">3 sec</option>
+                <option value="4">4 sec</option>
+                <option value="5">5 sec</option>
+                <option value="6">6 sec</option>
+                <option value="7">7 sec</option>
+                <option value="8">8 sec</option>
+                <option value="9">9 sec</option>
+                <option value="10">10 sec</option>
+              </select>
+            </span>
+            <span>
+              <input
+                type="radio"
+                id="resolve2"
+                name="status2"
+                value="resolve"
+                checked
+                class="radio-btn"
+              />
+              <label for="resolve2" class="radio-label">Resolve</label>
+
+              <input
+                type="radio"
+                id="reject2"
+                name="status2"
+                value="reject"
+                class="radio-btn"
+              />
+              <label for="reject2" class="radio-label">Reject</label>
+            </span>
+          </div>
+
+          <div id="two" class="two"></div>
+          <div id="timeTwo" class="two"></div>
+        </div>
+        <div>
+          <b> Promise Three </b>
+
+          <div>
+            <span>
+              <label for="delay3">Delay: </label>
+              <select id="delay3" class="select-dropdown">
+                <option value="1">1 sec</option>
+                <option value="2" selected>2 sec</option>
+                <option value="3">3 sec</option>
+                <option value="4">4 sec</option>
+                <option value="5">5 sec</option>
+                <option value="6">6 sec</option>
+                <option value="7">7 sec</option>
+                <option value="8">8 sec</option>
+                <option value="9">9 sec</option>
+                <option value="10">10 sec</option>
+              </select>
+            </span>
+            <span>
+              <label for="resolve3" class="radio-label" checked="checked">
+                <input
+                  type="radio"
+                  id="resolve3"
+                  name="status3"
+                  value="resolve"
+                  checked
+                  class="radio-btn"
+                />
+                <span>Resolve</span>
+              </label>
+
+              <input
+                type="radio"
+                id="reject3"
+                name="status3"
+                value="reject"
+                class="radio-btn"
+              />
+              <label for="reject3" class="radio-label">Reject</label>
+            </span>
+          </div>
+
+          <div id="three" class="three"></div>
+          <div id="timeThree" class="three"></div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="card">
+        <b><em>Promise Result</em></b>
+
+        <div>
+          <span>State: </span>
+          <span id="promise-verdict"> </span>
+        </div>
+
+        <div id="result-progress"></div>
+
+        <b>
+          <div id="timeResult"></div>
+        </b>
+
+        <div id="result"></div>
+      </div>
+    </main>
+
+    <footer class="bottom">
+      <a
+        href="https://github.com/yamsun/Javascript-promise-concurrency-visualizer"
+        target="_blank"
+      >
+        Peek into Source Code &lt;/&gt;
+      </a>
+      <div>Made with &#128153; by Shyam Sundar</div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/shyam-sundar1/" target="_blank"
+          >Linkedin</a
+        >
+        |
+        <a href="https://github.com/yamsun" target="_blank">Github</a>
+      </div>
+    </footer>
+  </body>
+</html>

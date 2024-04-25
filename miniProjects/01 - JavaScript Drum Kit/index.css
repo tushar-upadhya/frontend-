@@ -50,3 +50,8 @@ kbd {
   letter-spacing: 0.1rem;
   color: #ffc600;
 }
+
+.made_by {
+  text-decoration: none;
+  color: rgba(50, 87, 81, 1);
+}

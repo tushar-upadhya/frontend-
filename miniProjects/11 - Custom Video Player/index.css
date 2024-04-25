@@ -162,3 +162,8 @@ input[type="range"]::-moz-range-thumb {
   background: #ffc600;
   cursor: pointer;
 }
+
+.made_by {
+  text-decoration: none;
+  color: rgba(50, 87, 81, 1);
+}

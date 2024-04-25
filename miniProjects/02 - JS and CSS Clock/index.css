@@ -45,3 +45,8 @@ body {
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
+
+.made_by {
+  text-decoration: none;
+  color: rgba(50, 87, 81, 1);
+}

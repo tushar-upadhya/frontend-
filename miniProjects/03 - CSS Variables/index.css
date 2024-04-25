@@ -34,3 +34,8 @@ body {
 input {
   width: 100px;
 }
+
+.made_by {
+  text-decoration: none;
+  color: rgba(50, 87, 81, 1);
+}

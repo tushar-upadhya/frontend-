@@ -31,3 +31,8 @@ a {
   color: #ffc600;
   text-decoration: none;
 }
+
+.made_by {
+  text-decoration: none;
+  color: rgba(50, 87, 81, 1);
+}

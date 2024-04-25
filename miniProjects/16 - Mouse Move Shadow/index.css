@@ -19,3 +19,8 @@ h1 {
   text-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
   font-size: 100px;
 }
+
+.made_by {
+  text-decoration: none;
+  color: rgba(50, 87, 81, 1);
+}

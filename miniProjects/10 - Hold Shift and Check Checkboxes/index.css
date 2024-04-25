@@ -40,3 +40,8 @@ p {
   font-weight: 200;
   border-left: 1px solid #d1e2ff;
 }
+
+.made_by {
+  text-decoration: none;
+  color: rgba(50, 87, 81, 1);
+}
